@@ -5,14 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sound of Comte - En construction</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        .bell {
+            transform-origin: 238.35px 121.37px; /* Point d'attache de la cloche */
+            animation: bellSwing 2s linear infinite;
+        }
+
+        @keyframes bellSwing {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(15deg);
+            }
+            75% {
+                transform: rotate(-15deg);
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <img src="svg/logo_01.svg" alt="Sound of Comte Logo" class="logo">
+        <img src="svg/logo_01.svg" alt="Sound of Comte Logo" class="logo" id="logo">
         <h3>L'innovation technologique au service de la tradition fromagère</h3>
         <div class="construction-box">
             <span>Site en construction</span>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger le SVG
+            fetch('svg/logo_01.svg')
+                .then(response => response.text())
+                .then(svgText => {
+                    // Créer un parser pour le SVG
+                    const parser = new DOMParser();
+                    const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
+                    
+                    // Ajouter la classe 'bell' aux paths de la cloche
+                    const bellPaths = svgDoc.querySelectorAll('#path10, #path12, #path14, #path16');
+                    bellPaths.forEach(path => {
+                        path.classList.add('bell');
+                    });
+                    
+                    // Remplacer l'image par le SVG modifié
+                    const logoContainer = document.getElementById('logo');
+                    logoContainer.parentNode.replaceChild(svgDoc.documentElement, logoContainer);
+                });
+        });
+    </script>
 </body>
-</html>     
+</html>
