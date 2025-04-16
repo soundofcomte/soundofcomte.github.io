@@ -1,0 +1,85 @@
+/* Importation des polices */
+@font-face {
+    font-family: 'Nunito-Light';
+    src: url('../fonts/Nunito/Nunito-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'JosefinSans-Bold';
+    src: url('../fonts/JosefinSans/JosefinSans-Bold.ttf') format('truetype');
+}
+
+/* Variables CSS */
+:root {
+    /* Marrons */
+    --color-brown-1: #eddbc5;
+    --color-brown-2: #ccb176;
+    --color-brown-3: #996043;
+
+    /* Verts */
+    --color-green-1: #b2cc76;
+    --color-green-2: #8fa35f;
+    --color-green-3: #525c3a;
+
+    /* Bleu */
+    --color-blue: #8bb6df;
+
+    /* Jaune/Orange */
+    --color-yellow: #fedb19;
+    --color-orange-1: #fec20c;
+    --color-orange-2: #f09b19;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles de base */
+body {
+    font-family: 'Nunito-Light', sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'JosefinSans-Bold', sans-serif;
+    color: var(--color-green-2);
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'JosefinSans-Bold', sans-serif;
+    color: var(--color-green-2);
+}
+
+.construction-box {
+    display: inline-block;
+    background-color: var(--color-green-1);
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.construction-box span {
+    font-family: 'JosefinSans-Bold', sans-serif;
+    color: var(--color-green-3);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
