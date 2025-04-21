@@ -1,15 +1,100 @@
-/* Importation des polices */
+/* -------------------------------------------------------------------------- */
+/*                                    Fonts                                   */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------- JosefinSans ------------------------------ */
+
 @font-face {
-    font-family: 'Nunito-Light';
-    src: url('../fonts/Nunito/Nunito-Light.ttf') format('truetype');
+    font-family: 'JosefinSans';
+    src: url('../fonts/JosefinSans/JosefinSans-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'JosefinSans-Bold';
-    src: url('../fonts/JosefinSans/JosefinSans-Bold.ttf') format('truetype');
+    font-family: 'JosefinSans';
+    src: url('../fonts/JosefinSans/JosefinSans-SemiBold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
 }
 
-/* Variables CSS */
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('../fonts/JosefinSans/JosefinSans-SemiBold.ttf') format('ttf');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('../fonts/JosefinSans/JosefinSans-Italic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('../fonts/JosefinSans/JosefinSans-SemiBoldItalic.ttf') format('ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('../fonts/JosefinSans/JosefinSans-BoldItalic.ttf') format('ttf');
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* --------------------------------- Nunito --------------------------------- */
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-SemiBold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Bold.ttf') format('ttf');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Italic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-SemiBoldItalic.ttf') format('ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-BoldItalic.ttf') format('ttf');
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  Variables                                 */
+/* -------------------------------------------------------------------------- */
+
 :root {
     /* Marrons */
     --color-brown-1: #eddbc5;
@@ -39,7 +124,9 @@
 
 /* Styles de base */
 body {
-    font-family: 'Nunito-Light', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .container {
@@ -56,12 +143,16 @@ body {
 }
 
 h1 {
-    font-family: 'JosefinSans-Bold', sans-serif;
+    font-family: 'JosefinSans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
     color: var(--color-green-2);
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: 'JosefinSans-Bold', sans-serif;
+    font-family: 'JosefinSans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
     color: var(--color-green-2);
 }
 
@@ -75,12 +166,12 @@ h2, h3, h4, h5, h6 {
 }
 
 .construction-box span {
-    font-family: 'JosefinSans-Bold', sans-serif;
+    font-family: 'JosefinSans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
     color: var(--color-green-3);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-
-/* Test */

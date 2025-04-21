@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sound of Comte - En construction</title>
+    <title>Reveal.js Test</title>
+    <!-- Reveal.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css" id="theme">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container">
-        <img src="svg/logo_01.svg" alt="Sound of Comte Logo" class="logo">
-        <h3>L'innovation technologique au service de la tradition fromagère</h3>
-        <div class="construction-box">
-            <span>Site en construction</span>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-image="https://cdn.foodism.co.uk/gallery_landscape_widescreen/5a4e21c7402ce.webp">
+                <img src="svg/logo_03.svg" alt="Logo" style="max-width: 350px; display: block; padding: 15px; margin: 0 auto;">
+                <h1 class="r-fit-text" style="color: whitesmoke;">Sound of Comté</h1>
+                <p style="color: whitesmoke">L'innovation au service de la tradition fromagère</p>
+            </section>
+            <!-- <section>
+                <h2>Slide 2</h2>
+                <p>Here is some more content.</p>
+            </section>
+            <section>
+                <h2>Slide 3</h2>
+                <p>Another slide for testing purposes.</p>
+            </section> -->
         </div>
     </div>
+
+    <!-- Reveal.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize();
+    </script>
 </body>
-</html>     
+</html>
