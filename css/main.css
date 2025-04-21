@@ -175,3 +175,13 @@ h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
+.mail {
+    font-size: 18px;
+}
+
+.mail > a {
+    color: whitesmoke;
+    background: rgb(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 15px;
+}
