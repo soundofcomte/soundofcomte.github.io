@@ -175,6 +175,14 @@ h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
+
+.custom-background-home {
+    margin: auto 0;
+    padding: 5px 50px;
+    background: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+}
+
 .mail {
     font-size: 18px;
 }
