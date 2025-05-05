@@ -113,13 +113,9 @@
     --color-yellow: #fedb19;
     --color-orange-1: #fec20c;
     --color-orange-2: #f09b19;
-}
 
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* Hauteur de la navbar */
+    --navbar-height: 56px; 
 }
 
 /* Styles de base */
@@ -129,21 +125,8 @@ body {
     font-style: normal;
 }
 
-.container {
-    text-align: center;
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.logo {
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 2rem;
-}
-
 h1 {
-    font-family: 'JosefinSans', sans-serif;
+    font-family: 'JosephinSans', sans-serif;
     font-weight: bold;
     font-style: normal;
     color: var(--color-green-2);
@@ -151,45 +134,173 @@ h1 {
 
 h2, h3, h4, h5, h6 {
     font-family: 'JosefinSans', sans-serif;
-    font-weight: bold;
     font-style: normal;
+    font-size: 2.5rem;
     color: var(--color-green-2);
 }
 
-.construction-box {
-    display: inline-block;
-    background-color: var(--color-green-1);
-    padding: 0.5rem 1.5rem;
-    border-radius: 2rem;
-    margin-top: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.construction-box span {
-    font-family: 'JosefinSans', sans-serif;
-    font-weight: bold;
-    font-style: normal;
+h5 {
+    font-size: 1.5rem;
     color: var(--color-green-3);
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 
-.custom-background-home {
-    margin: auto 0;
-    padding: 5px 50px;
-    background: rgb(0, 0, 0, 0.1);
-    backdrop-filter: blur(4px);
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  Web site                                  */
+/* -------------------------------------------------------------------------- */
+
+
+body {
+    background-color: #ffffff; /* Couleur de fond blanche */
+    color: #343a40; /* Couleur de texte principale */
+    padding-top: 56px; /* Espace pour la navbar fixée */
 }
 
-.mail {
-    font-size: 18px;
+.navbar {
+    background-color: var(--color-green-2);
 }
 
-.mail > a {
-    color: whitesmoke;
-    background: rgb(0, 0, 0, 0.5);
-    padding: 10px 15px;
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: var(--color-yellow) !important;
+}
+
+
+section {
+    /* height: calc(100vh - var(--navbar-height)); */
+    padding-top: 50px;
+}
+
+section:nth-of-type(even) {
+    background-color: #f9f9f9; /* Couleur de fond légèrement blanche */
+}
+
+
+
+.hero {
+    background-color: #f8f9fa; /* Couleur de fond claire */
+    color: var(--color-green-3);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    height: calc(100vh - var(--navbar-height)); /* Prend tout l'espace disponible */
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/daniela-paola-alchapar-xmYIoWJF2D4-unsplash.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(5px); */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    margin-top: 75px;
+    z-index: 2;
+    text-align: center;
+    color: #fff; /* Couleur du texte pour qu'il soit visible sur l'image */
+    /* padding-top: 100px; */
+}
+
+.hero-content h1 {
+    font-size: 7rem;
+    margin-bottom: 150px;
+}
+
+.hero-content p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.hero-content a {
+    background-color: var(--color-green-2);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-content a:hover {
+    background-color: var(--color-blue);
+    border: none;
+}
+
+
+
+
+
+.project, .about, .contact {
+    padding: 50px 0;
+}
+
+.project h2, .about h2, .contact h2 {
+    color: var(--color-green-2);
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #343a40; /* Couleur de fond sombre */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+
+.project .card {
+    height: 100%;
+}
+
+.card {
+    border: none;
     border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    /* transform: translateY(-10px); */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: var(--color-green-2);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.project .card i {
+    color: var(--color-blue);
+}
+
+
+
+
+.about .card {
+    height: 100%;
+}
+
+.about .card img {
+    height: 200px;
+}
+
+.about .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

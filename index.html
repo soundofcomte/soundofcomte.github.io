@@ -1,45 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reveal.js Test</title>
-    <!-- Reveal.js CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css" id="theme">
-    <!-- Custom CSS -->
+    <title>DeepTech Comté</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-    <div class="reveal">
-        <div class="slides">
-            <!-- <section data-background-color="rgb(0, 0, 0)" data-autoslide="1000" data-visibility="uncounted">
-            </section> -->
-            <section data-background-image="https://images.unsplash.com/photo-1619182709086-6cb7beadbe66?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                <!-- <div class="custom-background-home"> -->
-                    <img class="r-stretch" src="svg/logo_03.svg" alt="Logo" style="max-width: 450px; width: 40%; display: block; padding: 25px; margin: 0 auto;">
-                    <h1 class="r-fit-text" style="color: whitesmoke;">Sound of Comté</h1>
-                    <hr style="color: whitesmoke;">
-                    <p style="color: whitesmoke; margin-bottom: 50px;">L'innovation au service de la tradition</p>
-                    <p class="mail" style="font-size: 18px;"><a href="mailto:soundofcomte@gmail.com">soundofcomte@gmail.com</a></p>
-                <!-- </div> -->
-                
-            </section>
-            <!-- <section>
-                <h2>Slide 2</h2>
-                <p>Here is some more content.</p>
-            </section>
-            <section>
-                <h2>Slide 3</h2>
-                <p>Another slide for testing purposes.</p>
-            </section> -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">Sound of Comté</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact us</a>
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
 
-    <!-- Reveal.js Script -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <img src="svg/logo_03.svg" alt="Logo">
+            <!-- <p>L'innovation au service de la tradition</p> -->
+            <!-- <a href="#project" class="btn btn-primary btn-lg">Découvrir notre projet</a> -->
+        </div>
+    </section>
+    
+    <section id="project" class="project">
+        <div class="container">
+            <h2 class="mb-5">Quand la technologie s'invite en cave</h2>
+            <p>Sound of Comté, c'est l'alliance de la tradition fromagère et de l'innovation technologique.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-magnifying-glass display-4 mb-3"></i>
+                            <p>Le contrôle qualité actuel nécessite l'intervention manuelle de personnel hautement qualifié.</p>
+                            <p>En plus d'être destructif, il ne permet pas de prédire l'évolution des meules</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-lightbulb display-4 mb-3"></i>
+                            <p>Analyser les signatures acoustiques des meules de manière non destructive</p>
+                            <p>Détecter précocement les défauts et de prédire l'évolution de la qualité dans le temps</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hands-helping display-4 mb-3"></i>
+                            <p>Le geste de l'affineur reflete un savoir faire inégalable. Le projet Sound of Comté vise à renforcer ce geste en s'appuyant sur les nouvelles technologies</p>
+                            <p>Ce mélange de tradtition et d'innovation ouvre la voie à une gestion des stock optimisée et intelligente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+     
+    <section id="about" class="about">
+        <div class="container">
+            <h2>À propos de nous</h2>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card shadow-sm">
+                        <img src="svg/logo_01.svg" class="card-img-top" alt="Photo de la gueule de Simon">
+                        <div class="card-body">
+                            <h5 class="card-title">Simon Rampnoux</h5>
+                            <p>
+                                Simon Rampnoux est docteur en acoustique, ayant soutenu sa thèse en 2024 à l’Université de Technologie de Compiègne. Ses recherches se sont concentrées sur la mesure des champs de vitesse acoustique dans des écoulements turbulents.
+                            </p>
+                            <p>
+                                Son approche, axée sur l'innovation dans les méthodes de mesure, lui permet de bien appréhender l'expérimentation nécessaire pour Sound of Comté, en combinant instrumentation classique et techniques de calcul modernes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card shadow-sm">
+                        <img src="svg/logo_01.svg" class="card-img-top" alt="Photo de la gueule de Alex">
+                        <div class="card-body">
+                            <h5 class="card-title">Alexandre Berthet</h5>
+                            <p>
+                                Alexandre Berthet est docteur en acoustique et vibrations, diplômé en 2022 de l’Université de Technologie de Compiègne. Ses recherches ont porté sur la modélisation des structures multicouches viscoélastiques, avec une spécialisation dans l’optimisation des simulations numériques.
+                            </p>
+                            <p>
+                                Cette expertise trouve une résonance naturelle dans l’étude des meules de comté, qui partagent des caractéristiques structurelles similaires, lui permettant d'aborder sereinement les aspects de modélisation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <p>Nous recherchons actuellement des partenaires pour déployer notre solution à plus grande échelle.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Votre email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>    
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sound of Comté. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        Reveal.initialize();
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+    
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 56, // Soustrait la hauteur de la navbar
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
     </script>
+    
 </body>
 </html>
